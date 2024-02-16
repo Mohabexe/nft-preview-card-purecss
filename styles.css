@@ -1,0 +1,152 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+// <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 100 to 900
+
+.outfit-<uniquifier> {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue: hsl(217, 54%, 11%);
+    --Very-dark-blue-card: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    background-color: var(--Very-dark-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--White);
+}
+main{
+    flex-direction: column;
+    background-color: var(--Very-dark-blue-card);
+    width: 25%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 var(--Very-dark-blue-card);
+    margin-top: auto;
+}
+.img{
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.3rem;
+    margin-top: 1.4rem;
+    border-radius: 10px;
+}
+.top{
+    display: block;
+    margin: 0 auto;
+    padding: 1rem;
+    border-bottom: 1px solid var(--Very-dark-blue-line);
+    width: 85%
+}
+.title{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    margin-left: -1rem;
+    transition: color 0.3s ease-in-out;
+}
+.paragraph{
+    margin-left: -1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+    color: var(--Soft-blue);
+    line-height: 1.5;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+}
+.eth{
+    display: flex;
+    margin-left: -1rem;
+    font-weight: 500;
+    color: var(--Cyan);
+}
+.eth-icon{
+    display: block;
+    margin-right: 0.4rem;
+    margin-top: auto;
+}
+.date{
+    display: flex;
+    margin-right: -1rem;
+    font-weight: 500;
+    color: var(--Soft-blue);
+}
+.date-icon{
+    display: block;
+    margin-right: 0.4rem;
+    margin-top: 0.06rem;
+}
+.bottom{
+    display: flex;
+    width: 85%;
+    padding: 1.5rem;
+}
+.avatar{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 1px solid var(--White);
+}
+.creation{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--Soft-blue);
+}
+.name{
+    font-size: 1rem;
+    margin-left: 0.2rem;
+    font-weight: 300;
+    color: var(--White);
+    transition: color 0.3s ease-in-out;
+}
+.name:hover, .title:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+.attribution{
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--Soft-blue);
+    margin-left: 1rem;
+    margin-top: auto;
+    margin-bottom: 6rem;
+}
+@media (max-width: 400px){
+    main{
+        width: 90%;
+    }
+}
+@media (min-width: 400px) and (max-width: 1000px){
+    main{
+        width: 40%;
+    }
+}
